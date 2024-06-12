@@ -10,12 +10,14 @@ type AvatarProps = {
 
 const avatar = ({text, sx, alt, src }: AvatarProps) => {
   return (
+    <div>
     <Avatar 
         alt={alt} 
         src={src} 
         sx={sx}>
       {text}
     </Avatar>
+    </div>
   )
 }
 

@@ -4,6 +4,37 @@
   box-sizing: border-box;
   color: white;
 }
+
+.hover-light {
+  transform-style: preserve-3d;
+  transform: translateZ(-1px);
+  transition: transform 0.2s ease-in-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.hover-light:hover{
+  box-shadow: 0px 0px 20px 6px #092cca;
+  transition: transform 0.2s ease-in-out 0s;
+  transform: scale(1.01);
+}
+.hover-light:hover:after {
+  background-attachment: fixed;
+  background-image: url('../public/statics/img/image-2.png');
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 24px;
+  content: "";
+  height: 1400px;
+  left: -50%;
+  pointer-events: none;
+  position: absolute;
+  transform: translateZ(-1px);
+  width: 200%;
+  z-index: 0;
+}
+
 body {
   margin: 0;
   padding: 0;

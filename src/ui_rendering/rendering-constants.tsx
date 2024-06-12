@@ -3,7 +3,8 @@ import {
   Container,
   Typography,
   Avatar,
-  Image
+  Image,
+  Box
 } from '../ui_components'
 
 export const Components = {
@@ -11,5 +12,6 @@ export const Components = {
   Container,
   Typography,
   Avatar,
-  Image
+  Image,
+  Box
 }

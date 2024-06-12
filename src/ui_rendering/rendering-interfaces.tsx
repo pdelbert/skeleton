@@ -3,7 +3,8 @@ type ComponentList =
     | 'Container'
     | 'Typography'
     | 'Avatar'
-    | 'Image';
+    | 'Image'
+    | 'Box';
 
 
 export interface IComponent {
