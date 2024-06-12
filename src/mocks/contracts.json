@@ -553,34 +553,101 @@
       "disableGutter": true,
       "maxWidth": false,
       "style": {
-        "height": "99vh",
+        "height": "100vh",
         "minHeight": "860px",
         "alignItems":"center",
         "justifyContent":"center",
-        "display":"flex"
+        "display":"flex",
+        "backgroundImage": "url(/statics/img/bg_pattern_2.png)",
+        "backgroundSize": "contain"
       },
       "items": [
         {
           "ui_type": "Grid",
           "data":{
             "container": true,
-            "spacing": 2,
+            "spacing": 0,
             "items": [
               {
                 "ui_type": "Grid",
                 "data":{
                   "item": true,
                   "xs": 4,
+                  "style": {
+                    "display": "flex",
+                    "alignItems":"center",
+                    "justifyContent":"center",
+                    "flexDirection": "column"
+                  },
                   "items": [
+                    {
+                      "ui_type": "Avatar",
+                      "data":{
+                        "sx": { 
+                          "width": 280, 
+                          "height": 280,
+                          "bgcolor": "#a4b0e5",
+                          "border": "10px solid white",
+                          "marginBottom": "20px"
+                        },
+                        "src":"/statics/img/main_circle.png",
+                        "items": []
+                      }
+                    },
                     {
                       "ui_type": "Typography",
                       "data":{
-                        "variant": "h6",
-                        "component": "h6",
-                        "text": "Hola Mundo ",
+                        "variant": "h5",
+                        "component": "h5",
+                        "text": "PROGRAMMING",
+                        "sx": {
+                          "color": "#23e270"
+                        },
                         "items": []
                       }
-                    }     
+                    }
+                  ]
+                }
+              }, 
+              {
+                "ui_type": "Grid",
+                "data":{
+                  "item": true,
+                  "xs": 4,
+                  "style": {
+                    "display": "flex",
+                    "alignItems":"center",
+                    "justifyContent":"center",
+                    "flexDirection": "column"
+                  },
+                  "items": [
+                    {
+                      "ui_type": "Avatar",
+                      "data":{
+                        "sx": { 
+                          "width": 280, 
+                          "height": 280,
+                          "bgcolor": "#a4b0e5",
+                          "border": "10px solid white",
+                          "marginBottom": "20px"
+                        },
+                        "src": "/statics/img/main_circle.png",
+                        "text": "P",
+                        "items": []
+                      }
+                    },
+                    {
+                      "ui_type": "Typography",
+                      "data":{
+                        "variant": "h5",
+                        "component": "h5",
+                        "text": "INTEREST",
+                        "sx": {
+                          "color": "#23e270"
+                        },
+                        "items": []
+                      }
+                    }
                   ]
                 }
               },
@@ -589,34 +656,39 @@
                 "data":{
                   "item": true,
                   "xs": 4,
+                  "style": {
+                    "display": "flex",
+                    "alignItems":"center",
+                    "justifyContent":"center",
+                    "flexDirection": "column"
+                  },
                   "items": [
+                    {
+                      "ui_type": "Avatar",
+                      "data":{
+                        "sx": { 
+                          "width": 280, 
+                          "height": 280,
+                          "bgcolor": "#a4b0e5",
+                          "border": "10px solid white",
+                          "marginBottom": "20px"
+                        },
+                        "src":"/statics/img/main_circle.png",
+                        "items": []
+                      }
+                    },
                     {
                       "ui_type": "Typography",
                       "data":{
-                        "variant": "h6",
-                        "component": "h6",
-                        "text": "Hola Mundo 2",
+                        "variant": "h5",
+                        "component": "h5",
+                        "text": "CONTACT",
+                        "sx": {
+                          "color": "#23e270"
+                        },
                         "items": []
                       }
-                    }     
-                  ]
-                }
-              },
-              {
-                "ui_type": "Grid",
-                "data":{
-                  "item": true,
-                  "xs": 4,
-                  "items": [
-                    {
-                      "ui_type": "Typography",
-                      "data":{
-                        "variant": "h6",
-                        "component": "h6",
-                        "text": "Hola Mundo 44",
-                        "items": []
-                      }
-                    }     
+                    }
                   ]
                 }
               }   

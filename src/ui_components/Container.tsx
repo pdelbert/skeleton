@@ -6,12 +6,14 @@ type ContainerProps = {
     disableGutters: boolean,
     fixed: boolean,
     maxWidth: 'xs' | 'sm' | 'md' | 'lg' | 'xl' | false,
+    style: object
 }
 
-const container = ({children, fixed, disableGutters, maxWidth }: ContainerProps) => {
+const container = ({children, fixed, disableGutters, maxWidth, style }: ContainerProps) => {
   return (
     <Container 
         fixed={fixed} 
+        style={style}
         disableGutters={disableGutters} 
         maxWidth={maxWidth}>
       {children}

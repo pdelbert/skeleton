@@ -1,11 +1,15 @@
 import {
   Grid,
   Container,
-  Typography
+  Typography,
+  Avatar,
+  Image
 } from '../ui_components'
 
 export const Components = {
   Grid,
   Container,
-  Typography
+  Typography,
+  Avatar,
+  Image
 }

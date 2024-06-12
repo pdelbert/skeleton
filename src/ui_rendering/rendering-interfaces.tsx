@@ -1,7 +1,9 @@
 type ComponentList =
     | 'Grid'
     | 'Container'
-    | 'Typography';
+    | 'Typography'
+    | 'Avatar'
+    | 'Image';
 
 
 export interface IComponent {

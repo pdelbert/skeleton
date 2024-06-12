@@ -15,6 +15,7 @@ type GridProps = {
     xl: 'auto' | number | boolean,
     wrap: 'nowrap' | 'wrap-reverse' | 'wrap',
     direction: 'column-reverse' | 'column' | 'row-reverse' | 'row',
+    style: object
 }
 
 const grid = ({
@@ -26,7 +27,8 @@ const grid = ({
     rowSpacing, 
     direction,
     xs, sm, md, lg, xl,
-    wrap
+    wrap,
+    style
 }: GridProps) => {
   return (
     <Grid 
@@ -36,6 +38,7 @@ const grid = ({
       spacing={spacing}
       rowSpacing={rowSpacing} 
       direction={direction}
+      style={style}
       xs={xs} 
       sm={sm} 
       md={md} 
