@@ -1,6 +1,3 @@
-import React from 'react';
-import './App.css';
-
 import { RenderView } from './ui_rendering';
 import { PageProvider, Context } from './context/page-context';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -11,7 +8,6 @@ const RenderViewComponent = () => {
       ? <RenderView data={pageData} /> 
       : null;
 } 
-
 
 function App() {
   return (
