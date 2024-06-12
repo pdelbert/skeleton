@@ -1,0 +1,629 @@
+{
+  "reporting": {
+    "ui_type": "Flex",
+    "data": {
+      "truncate": "false",
+      "items": [
+        {
+          "ui_type": "Card",
+          "data": {
+            "className": "main_card",
+            "items": [
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "ColGrid",
+                      "data": {
+                        "numColsLg": "2",
+                        "items": [
+                          {
+                            "ui_type": "Col",
+                            "data": {
+                              "numColSpanLg": "1",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "text": "Calendar"
+                                  }
+                                },
+                                {
+                                  "ui_type": "DateRangePicker",
+                                  "data": {}
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ui_type": "Col",
+                            "data": {
+                              "numColSpanLg": "1",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "text": "Location"
+                                  }
+                                },
+                                {
+                                  "ui_type": "SelectBox",
+                                  "data": {
+                                    "placeholder": "Location",
+                                    "action": {
+                                      "event": "changeLocation",
+                                      "target_id": "123131231"
+                                    },
+                                    "request": "http://localhost:4001/v1/contract/location",
+                                    "content": []
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ui_type": "Flex",
+                "data": {
+                  "className": "flex_cards",
+                  "truncate": "false",
+                  "items": [
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "action": {
+                                "event": "toggleView",
+                                "target_id": "1"
+                              },
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "text": "Total Sales"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Text",
+                                        "data": {
+                                          "text": "$456.78"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "action": {
+                                "event": "toggleView",
+                                "target_id": "2"
+                              },
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Guest Count"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Text",
+                                        "data": {
+                                          "text": "23"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "action": {
+                                "event": "toggleView",
+                                "target_id": "3"
+                              },
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Avg Order (Per Person)"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Text",
+                                        "data": {
+                                          "text": "$16.23"
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Labor"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Flex",
+                                        "data": {
+                                          "items": [
+                                            {
+                                              "ui_type": "Text",
+                                              "data": {
+                                                "text": "$276.89 (4)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Comps"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Flex",
+                                        "data": {
+                                          "items": [
+                                            {
+                                              "ui_type": "Text",
+                                              "data": {
+                                                "text": "$34.16 (5)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Discounts"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Flex",
+                                        "data": {
+                                          "items": [
+                                            {
+                                              "ui_type": "Text",
+                                              "data": {
+                                                "text": "$16.77 (8)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "ui_type": "Block",
+                      "data": {
+                        "items": [
+                          {
+                            "ui_type": "Card",
+                            "data": {
+                              "decoration":"top", 
+                              "decorationColor":"indigo",
+                              "items": [
+                                {
+                                  "ui_type": "Bold",
+                                  "data": {
+                                    "visible": true,
+                                    "text": "Voids"
+                                  }
+                                },
+                                {
+                                  "ui_type": "Block",
+                                  "data": {
+                                    "items": [
+                                      {
+                                        "ui_type": "Flex",
+                                        "data": {
+                                          "items": [
+                                            {
+                                              "ui_type": "Text",
+                                              "data": {
+                                                "text": "$45.02 (2)"
+                                              }
+                                            }
+                                          ]
+                                        }
+                                      }
+                                    ]
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "Card",
+                      "data": {
+                        "id": "1",
+                        "visible": false,
+                        "decoration":"left", 
+                        "decorationColor":"indigo",
+                        "items": [
+                          {
+                            "ui_type": "Bold",
+                            "data": {
+                              "text": "Total Sales Container"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "Card",
+                      "data": {
+                        "decoration":"left", 
+                        "decorationColor":"indigo",
+                        "id": "2",
+                        "visible": false,
+                        "items": [
+                          {
+                            "ui_type": "Bold",
+                            "data": {
+                              "text": "Guest Count Container"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "Card",
+                      "data": {
+                        "decoration":"left", 
+                        "decorationColor":"indigo",
+                        "id": "3",
+                        "visible": false,
+                        "items": [
+                          {
+                            "ui_type": "Bold",
+                            "data": {
+                              "text": "Avg Order (Per Person) Container"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+                "ui_type": "Divider",
+                "data": {}
+              },
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "Flex",
+                      "data": {
+                        "className": "flex_cards",
+                        "items": [
+                          {
+                            "ui_type": "Block",
+                            "data": {
+                              "items": [
+                                {
+                                  "ui_type": "AreaChart",
+                                  "data": {
+                                    "keyId": "areaChart-id",
+                                    "title": "Group By Location",
+                                    "categories": [],
+                                    "content": [],
+                                    "request": "http://localhost:4001/v1/contract/areachart/278ecd88-237a-4399-b7bf-5be1987b79f7"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ui_type": "Block",
+                            "data": {
+                              "items": [
+                                {
+                                  "ui_type": "BarChart",
+                                  "data": {
+                                    "keyId": "barChart-id",
+                                    "title": "Top Three Categories",
+                                    "categories": [],
+                                    "colors": [],
+                                    "content":[],
+                                    "action": {
+                                      "event": "displayDetailsTable",
+                                      "target_id": ""
+                                    },
+                                    "request": "http://localhost:4001/v1/contract/barchart/552d885d-f31c-40e8-bcee-beada1d27f66"
+                                  }
+                                }
+                              ]
+                            }
+                          },
+                          {
+                            "ui_type": "Block",
+                            "data": {
+                              "items": [
+                                {
+                                  "ui_type": "LineChart",
+                                    "data": {
+                                      "keyId": "lineChart-id",
+                                      "title": "Group By Range Dates",
+                                      "categories": [],
+                                      "request": "http://localhost:4001/v1/contract/linechart/552d885d-f31c-40e8-bcee-beada1d27f66",
+                                      "content":[]
+                                    }
+                                }
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              },
+              {
+          "ui_type": "Card",
+          "data": {
+            "className": "main_card",
+            "items": [
+              {
+                "ui_type": "Block",
+                "data": {
+                  "items": [
+                    {
+                      "ui_type": "Table",
+                      "data": {
+                        "keyId": "table-id",
+                        "request": "http://localhost:4001/v1/contract/table/8b4d6559-876d-4d0f-92eb-e08f82c4caf8",
+                        "title": "Hello Table",
+                        "subtitle": "Hello SubTable",
+                        "headers": [],
+                        "content": []
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+            ]
+          }
+        }
+      ]
+    }
+  },
+ "main": {
+    "ui_type": "Container",
+    "data": {
+      "disableGutter": true,
+      "maxWidth": false,
+      "style": {
+        "height": "99vh",
+        "minHeight": "860px",
+        "alignItems":"center",
+        "justifyContent":"center",
+        "display":"flex"
+      },
+      "items": [
+        {
+          "ui_type": "Grid",
+          "data":{
+            "container": true,
+            "spacing": 2,
+            "items": [
+              {
+                "ui_type": "Grid",
+                "data":{
+                  "item": true,
+                  "xs": 4,
+                  "items": [
+                    {
+                      "ui_type": "Typography",
+                      "data":{
+                        "variant": "h6",
+                        "component": "h6",
+                        "text": "Hola Mundo ",
+                        "items": []
+                      }
+                    }     
+                  ]
+                }
+              },
+              {
+                "ui_type": "Grid",
+                "data":{
+                  "item": true,
+                  "xs": 4,
+                  "items": [
+                    {
+                      "ui_type": "Typography",
+                      "data":{
+                        "variant": "h6",
+                        "component": "h6",
+                        "text": "Hola Mundo 2",
+                        "items": []
+                      }
+                    }     
+                  ]
+                }
+              },
+              {
+                "ui_type": "Grid",
+                "data":{
+                  "item": true,
+                  "xs": 4,
+                  "items": [
+                    {
+                      "ui_type": "Typography",
+                      "data":{
+                        "variant": "h6",
+                        "component": "h6",
+                        "text": "Hola Mundo 44",
+                        "items": []
+                      }
+                    }     
+                  ]
+                }
+              }   
+            ]
+          }
+        }
+      ]
+    }
+ }
+}

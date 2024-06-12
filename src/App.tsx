@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import { RenderView } from './ui_rendering';
+import { PageProvider, Context } from './context/page-context';
+import CssBaseline from '@mui/material/CssBaseline';
+
+const RenderViewComponent = () => {
+  const { pageData } = Context();
+  return pageData 
+      ? <RenderView data={pageData} /> 
+      : null;
+} 
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CssBaseline />
+      <PageProvider>
+        <RenderViewComponent />
+      </PageProvider>
     </div>
   );
 }
