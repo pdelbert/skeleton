@@ -3,6 +3,8 @@
   padding: 0;
   box-sizing: border-box;
   color: white;
+  font-family: 'VCR OSD Mono', sans-serif !important;
+
 }
 
 .hover-light {
