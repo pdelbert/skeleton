@@ -1,21 +1,26 @@
 import React from 'react'
 import Grid from '@mui/material/Grid';
 
+type GridSize = 'auto' | number;
+type GridSpacing = number | string;
+type GridWrap = 'nowrap' | 'wrap' | 'wrap-reverse';
+type GridDirection = 'row' | 'row-reverse' | 'column' | 'column-reverse';
+
 type GridProps = {
-    children: React.ReactNode,
-    container: boolean,
-    item: boolean,
-    columns: number,
-    spacing: string | number, 
-    rowSpacing: number | string,
-    xs: 'auto' | number | boolean,
-    sm: 'auto' | number | boolean,
-    md: 'auto' | number | boolean,
-    lg: 'auto' | number | boolean,
-    xl: 'auto' | number | boolean,
-    wrap: 'nowrap' | 'wrap-reverse' | 'wrap',
-    direction: 'column-reverse' | 'column' | 'row-reverse' | 'row',
-    style: object
+    children: React.ReactNode;
+    container: boolean;
+    item: boolean;
+    columns: number;
+    spacing: GridSpacing;
+    rowSpacing: GridSpacing;
+    xs: boolean | GridSize;
+    sm: boolean | GridSize;
+    md: boolean | GridSize;
+    lg: boolean | GridSize;
+    xl: boolean | GridSize;
+    wrap: GridWrap;
+    direction: GridDirection;
+    style: object;
 }
 
 const grid = ({

@@ -5,7 +5,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 const RenderViewComponent = () => {
   const { pageData } = Context();
   return pageData 
-      ? <RenderView data={pageData} /> 
+      ? <RenderView data={pageData} />
       : null;
 } 
 

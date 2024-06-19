@@ -2,10 +2,11 @@ import React, { useState, useEffect, useMemo, useContext } from "react";
 import { pageServices } from "../services/pageServices";
 
 const route = 'http://localhost:4000/main';
-const PageContext = React.createContext();
    
-const PageProvider = (props) => {
-  const [pageData, setPageData] = useState(null);
+const PageContext = React.createContext<undefined>(undefined)
+   
+const PageProvider = (props:any) => {
+  const [pageData, setPageData] = useState<undefined>(undefined);
   
   useEffect(() => {
       (async () => {

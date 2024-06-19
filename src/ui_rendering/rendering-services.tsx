@@ -2,7 +2,7 @@ import React from 'react';
 import { IComponent } from './rendering-interfaces';
 import { Components } from './rendering-constants';
 
-export function RenderView({data}): React.ReactNode {
+export function RenderView({data}:any): React.ReactNode {
     if (!data) return null;
 
     function createComponent(item: IComponent): React.ReactNode {
