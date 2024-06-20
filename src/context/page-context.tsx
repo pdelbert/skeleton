@@ -1,22 +1,45 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { pageServices } from "../services/pageServices";
+import { actions } from "../actions";
 
-const route = 'http://localhost:4000/main';
-   
+interface IAction {
+  eventAction: keyof typeof actions
+  route: string
+}
+
+const baseRequestUrl = `http://localhost:4000/`;
+
 const PageContext = React.createContext<undefined>(undefined)
-   
+
+
 const PageProvider = (props:any) => {
-  const [pageData, setPageData] = useState<undefined>(undefined);
   
+  const currentUrl = window.location.href.split('/').pop();
+
+  const [pageEvent, setPageEvent] = useState('');
+  const [pageData, setPageData] = useState<undefined>(undefined);
+  const [pageRoute, setPageRoute] = useState(currentUrl && currentUrl.length > 0 ? currentUrl : 'main');
+
   useEffect(() => {
       (async () => {
-        const data = await pageServices(route);
+        const data = await pageServices(`${baseRequestUrl}${pageRoute}`);
+        window.history.replaceState(null, '', `/${pageRoute}`)
         setPageData(data);
       })();
-  },[]);
+  },[pageRoute]);
+
+  const triggerActionEvent = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>, action:IAction) => {
+    e && e.stopPropagation();
+    const {eventAction, route } = action;
+    actions[eventAction](route, setPageRoute);
+    setPageEvent('triggerActionEvent')
+  }
 
   const value = useMemo(() => {
-    return { pageData };
+    return { 
+      pageData, 
+      triggerActionEvent 
+    };
   }, [pageData]);
 
   return <PageContext.Provider value={value} {...props} />; 
