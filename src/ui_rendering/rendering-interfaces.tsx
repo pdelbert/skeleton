@@ -4,7 +4,10 @@ type ComponentList =
     | 'Typography'
     | 'Avatar'
     | 'Image'
-    | 'Box';
+    | 'Box'
+    | 'Link';
+
+    
 
 
 export interface IComponent {

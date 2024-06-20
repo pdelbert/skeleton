@@ -4,7 +4,8 @@ import {
   Typography,
   Avatar,
   Image,
-  Box
+  Box,
+  Link
 } from '../ui_components'
 
 export const Components = {
@@ -13,5 +14,6 @@ export const Components = {
   Typography,
   Avatar,
   Image,
-  Box
+  Box,
+  Link
 }

@@ -4,6 +4,7 @@ import Typography from './Typography';
 import Avatar from './Avatar';
 import Image from './Image';
 import Box from './Box';
+import Link from './Link';
 
 export {
   Grid,
@@ -11,5 +12,6 @@ export {
   Typography,
   Avatar,
   Image,
-  Box
+  Box,
+  Link
 }
