@@ -1,28 +1,26 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { pageServices } from "../services/pageServices";
 import { actions } from "../actions";
+import { Methods, Routes } from "../types";
 
 interface IAction {
   eventAction: keyof typeof actions
   route: string
 }
 
-const baseRequestUrl = `http://localhost:4000/`;
-
 const PageContext = React.createContext<undefined>(undefined)
 
 
 const PageProvider = (props:any) => {
+  const initRequestType:Methods = 'get';
+  const currentUrl:string = window.location.href.split('/').pop() || "main";
   
-  const currentUrl = window.location.href.split('/').pop();
-
-  const [pageEvent, setPageEvent] = useState('');
-  const [pageData, setPageData] = useState<undefined>(undefined);
-  const [pageRoute, setPageRoute] = useState(currentUrl && currentUrl.length > 0 ? currentUrl : 'main');
+  const [pageData, setPageData] = useState<object | unknown>(undefined);
+  const [pageRoute, setPageRoute] = useState(currentUrl);
 
   useEffect(() => {
       (async () => {
-        const data = await pageServices(`${baseRequestUrl}${pageRoute}`);
+        const data = await pageServices(initRequestType,`${pageRoute}`);
         window.history.replaceState(null, '', `/${pageRoute}`)
         setPageData(data);
       })();
@@ -32,7 +30,6 @@ const PageProvider = (props:any) => {
     e && e.stopPropagation();
     const {eventAction, route } = action;
     actions[eventAction](route, setPageRoute);
-    setPageEvent('triggerActionEvent')
   }
 
   const value = useMemo(() => {
