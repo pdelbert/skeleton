@@ -6,7 +6,7 @@ import { Routes } from "../Routes";
 
 interface IAction {
   eventAction: keyof typeof actions
-  route: string
+  params: object
 }
 
 const EMPTY = '';
@@ -18,19 +18,21 @@ const PageProvider = (props:any) => {
   const [pageData, setPageData] = useState<object | unknown>(undefined);
   const [pageRoute, setPageRoute] = useState(currentRoute in Routes ? currentRoute : Routes.main);
 
+  
   useEffect(() => {
       (async () => {
-        const data = await pageServices(initRequestType,`${pageRoute}`);
-        window.history.replaceState(null, '', `/${pageRoute}`)
-        setPageData(data);
+        setPageData(await pageServices(initRequestType,`${pageRoute}`));
+        window.history.replaceState(null, '', `/${pageRoute}`);
       })();
   },[pageRoute]);
 
+
   const triggerActionEvent = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>, action:IAction) => {
     e && e.stopPropagation();
-    const {eventAction, route } = action;
-    actions[eventAction](route, setPageRoute);
+    const {eventAction, params } = action;
+    actions[eventAction](params, setPageRoute);
   }
+
 
   const value = useMemo(() => {
     return { 
@@ -38,6 +40,7 @@ const PageProvider = (props:any) => {
       triggerActionEvent 
     };
   }, [pageData]);
+
 
   return <PageContext.Provider value={value} {...props} />; 
 };

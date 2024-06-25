@@ -1,1342 +1,1417 @@
 {
- "main": {
-    "ui_type": "Container",
-    "data": {
-      "disableGutter": true,
-      "maxWidth": false,
-      "style": {
-        "height": "auto",
-        "minHeight": "100vh",
-        "alignItems":"center",
-        "justifyContent":"center",
-        "display":"flex",
-        "backgroundImage": "url(/statics/img/bg_pattern_2.png)",
-        "backgroundSize": "contain"
-      },
-      "items": [
-        {
-          "ui_type": "Grid",
-          "data":{
-            "container": true,
-            "items": [
-              {
-                "ui_type": "Grid",
-                "data":{
-                  "item": true,
-                  "xs": 4,
-                  "style": {
-                    "display": "flex",
-                    "alignItems":"center",
-                    "justifyContent":"center",
-                    "flexDirection": "column"
-                  },
-                  "items": [
-                    {
-                      "ui_type": "Link",
-                      "data":{
-                        "underline": "none",
-                        "action": {
-                          "eventAction": "trigerNavEvent",
-                          "route": "programming"
-                        },
-                        "style": {
-                          "display": "flex",
-                          "alignItems":"center",
-                          "justifyContent":"center",
-                          "flexDirection": "column"
-                        },
-                        "items":[
-                          {
-                            "ui_type": "Box",
-                            "data":{
-                              "className": "hover-light",
-                              "sx": { 
-                                "width": 280, 
-                                "height": 280,
-                                "bgcolor": "#a4b0e5",
-                                "border": "10px solid white",
-                                "marginBottom": "20px",
-                                "borderRadius": "50%",
-                                "display": "flex",
-                                "alignItems":"center",
-                                "justifyContent":"center",
-                                "backgroundImage": "url(/statics/img/main_circle.png)",
-                                "backgroundSize": "contain",
-                                "boxShadow": "0px 0px 20px 6px black",
-                                "cursor": "pointer"
-                              },
-                              "items": [
-                                {
-                                  "ui_type": "Image",
-                                  "data":{
-                                    "style": { 
-                                      "width": 140
-                                    },
-                                    "src":"/statics/img/programming.png",
-                                    "items": []
-                                  }
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "ui_type": "Typography",
-                            "data":{
-                              "variant": "h5",
-                              "component": "h5",
-                              "text": "PROGRAMMING",
-                              "sx": {
-                                "color": "#23e270"
-                              },
-                              "items": []
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              }, 
-              {
-                "ui_type": "Grid",
-                "data":{
-                  "item": true,
-                  "xs": 4,
-                  "style": {
-                    "display": "flex",
-                    "alignItems":"center",
-                    "justifyContent":"center",
-                    "flexDirection": "column"
-                  },
+   "main":{
+      "ui_type":"Container",
+      "data":{
+         "disableGutter":true,
+         "maxWidth":false,
+         "style":{
+            "height":"auto",
+            "minHeight":"100vh",
+            "alignItems":"center",
+            "justifyContent":"center",
+            "display":"flex",
+            "backgroundImage":"url(/statics/img/bg_pattern_2.png)",
+            "backgroundSize":"contain"
+         },
+         "items":[
+            {
+               "ui_type":"Grid",
+               "data":{
+                  "container":true,
                   "items":[
-                    {
-                      "ui_type": "Link",
-                      "data":{
-                        "underline": "none",
-                        "action": {
-                          "eventAction": "trigerNavEvent",
-                          "route": "interest"
-                        },
-                        "style": {
-                          "display": "flex",
-                          "alignItems":"center",
-                          "justifyContent":"center",
-                          "flexDirection": "column"
-                        },
-                        "items": [
-                          {
-                            "ui_type": "Box",
-                            "data":{
-                              "className": "hover-light",
-                              "sx": { 
-                                "width": 280, 
-                                "height": 280,
-                                "bgcolor": "#a4b0e5",
-                                "border": "10px solid white",
-                                "marginBottom": "20px",
-                                "borderRadius": "50%",
-                                "display": "flex",
-                                "alignItems":"center",
-                                "justifyContent":"center",
-                                "backgroundImage": "url(/statics/img/main_circle.png)",
-                                "backgroundSize": "contain",
-                                "boxShadow": "0px 0px 20px 6px black",
-                                "cursor": "pointer"
-                              },
-                              "items": [
-                                {
-                                  "ui_type": "Image",
-                                  "data":{
-                                    "style": { 
-                                      "width": 190
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"programming"
+                                       }
                                     },
-                                    "src":"/statics/img/interest.png",
-                                    "items": []
-                                  }
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "ui_type": "Typography",
-                            "data":{
-                              "variant": "h5",
-                              "component": "h5",
-                              "text": "INTEREST",
-                              "sx": {
-                                "color": "#23e270"
-                              },
-                              "items": []
-                            }
-                          }
-                        ]
-                      }
-                    }
-                  ]
-                }
-              },
-              {
-                "ui_type": "Grid",
-                "data":{
-                  "item": true,
-                  "xs": 4,
-                  "style": {
-                    "display": "flex",
-                    "alignItems":"center",
-                    "justifyContent":"center",
-                    "flexDirection": "column"
-                  },
-                  "items":[
-                    {
-                      "ui_type": "Link",
-                      "data":{
-                        "underline": "none",
-                        "action": {
-                          "eventAction": "trigerNavEvent",
-                          "route": "contact"
-                        },
-                        "style": {
-                          "display": "flex",
-                          "alignItems":"center",
-                          "justifyContent":"center",
-                          "flexDirection": "column"
-                        },
-                        "items": [
-                          {
-                            "ui_type": "Box",
-                            "data":{
-                              "className": "hover-light",
-                              "sx": { 
-                                "width": 280, 
-                                "height": 280,
-                                "bgcolor": "#a4b0e5",
-                                "border": "10px solid white",
-                                "marginBottom": "20px",
-                                "borderRadius": "50%",
-                                "display": "flex",
-                                "alignItems":"center",
-                                "justifyContent":"center",
-                                "backgroundImage": "url(/statics/img/main_circle.png)",
-                                "backgroundSize": "contain",
-                                "boxShadow": "0px 0px 20px 6px black",
-                                "cursor": "pointer"
-                              },
-                              "items": [
-                                {
-                                  "ui_type": "Image",
-                                  "data":{
-                                    "style": { 
-                                      "width": 140
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
                                     },
-                                    "src":"/statics/img/contact.png",
-                                    "items": []
-                                  }
-                                }
-                              ]
-                            }
-                          },
-                          {
-                            "ui_type": "Typography",
-                            "data":{
-                              "variant": "h5",
-                              "component": "h5",
-                              "text": "CONTACT",
-                              "sx": {
-                                "color": "#23e270"
-                              },
-                              "items": []
-                            }
-                          }
-                        ]
-                      }
-                    }
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/programming.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"PROGRAMMING",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"programming"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":190
+                                                      },
+                                                      "src":"/statics/img/interest.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"INTEREST",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"contact"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/contact.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"CONTACT",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     }
                   ]
-                }
-              }   
-            ]
-          }
-        }
-      ]
-    }
- },
- "programming": {
-  "ui_type": "Container",
-  "data": {
-    "disableGutter": true,
-    "maxWidth": false,
-    "container": true,
-    "spacing": 5,
-    "style": {
-      "height": "auto",
-      "minHeight": "100vh",
-      "alignItems":"flex-start",
-      "justifyContent":"center",
-      "display":"flex",
-      "flexDirection": "row",
-      "backgroundImage": "url(/statics/img/bg_pattern_2.png)",
-      "backgroundSize": "contain"
-    },
-    "items": [
-      {
-        "ui_type": "Grid",
-        "data":{
-          "container": false,
-          "display":"flex",
-          "flexDirection": "row",
-          "style":{
-            "padding": "30px"
-          },
-          "items": [
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"flex-start",
-                  "flexDirection": "row",
-                  "marginBottom": "25px",
-                  "marginTop":"40px"
-                },
-                "items":[
-                  {
-                    "ui_type": "Box",
-                    "data":{
-                      "sx": { 
-                        "width": 80, 
-                        "height": 80,
-                        "bgcolor": "#a4b0e5",
-                        "border": "6px solid white",
-                        "marginBottom": "20px",
-                        "borderRadius": "50%",
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "backgroundImage": "url(/statics/img/main_circle.png)",
-                        "backgroundSize": "contain",
-                        "boxShadow": "0px 0px 20px 6px black",
-                        "cursor": "pointer",
-                        "zIndex": "21"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Image",
-                          "data":{
-                            "style": { 
-                              "width": 40
-                            },
-                            "src":"/statics/img/programming.png",
-                            "items": []
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Box",
-                    "data":{
-                      "sx": { 
-                        "width": 200, 
-                        "height": 60,
-                        "bgcolor": "#ffffff",
-                        "border": "1px solid white",
-                        "marginBottom": "20px",
-                        "marginLeft": "-20px",
-                        "borderRadius": "5px",
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "paddingLeft": "15px",
-                        "boxShadow": "0px 0px 20px 6px black",
-                        "cursor": "pointer"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h6",
-                            "component": "h6",
-                            "text": "PROGRAMMING",
-                            "sx": {
-                              "color": "#000000"
-                            },
-                            "items": []
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items":[
-                  {
-                    "ui_type": "Box",
-                    "data":{
-                      "className": "",
-                      "sx": { 
-                        "width": "auto", 
-                        "height": "auto",
-                        "bgcolor": "rgba(0,0,0,0.2)",
-                        "border": "2px solid white",
-                        "marginBottom": "20px",
-                        "borderRadius": "5px",
-                        "display": "flex",
-                        "alignItems":"flex-start",
-                        "justifyContent":"flex-start",
-                        "padding": "15px",
-                        "cursor": "pointer"
-                        
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h6",
-                            "component": "h6",
-                            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Eu facilisis sed odio morbi quis commodo odio. Ullamcorper sit amet risus nullam eget felis. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Pretium quam vulputate dignissim suspendisse. Venenatis lectus magna fringilla urna.",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"flex-start",
-                  "flexDirection": "row",
-                  "marginBottom": "25px",
-                  "marginTop": "80px"
-                },
-                "items":[
-                  {
-                    "ui_type": "Box",
-                    "data":{
-                      "sx": { 
-                        "width": 80, 
-                        "height": 80,
-                        "bgcolor": "#a4b0e5",
-                        "border": "6px solid white",
-                        "marginBottom": "20px",
-                        "borderRadius": "50%",
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "backgroundImage": "url(/statics/img/main_circle.png)",
-                        "backgroundSize": "contain",
-                        "boxShadow": "0px 0px 20px 6px black",
-                        "cursor": "pointer",
-                        "zIndex": "21"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Image",
-                          "data":{
-                            "style": { 
-                              "width": 49
-                            },
-                            "src":"/statics/img/github.png",
-                            "items": []
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Box",
-                    "data":{
-                      "sx": { 
-                        "width": 250, 
-                        "height": 60,
-                        "bgcolor": "#ffffff",
-                        "border": "1px solid white",
-                        "marginBottom": "20px",
-                        "marginLeft": "-20px",
-                        "borderRadius": "5px",
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "paddingLeft": "15px",
-                        "boxShadow": "0px 0px 20px 6px black",
-                        "cursor": "pointer"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h6",
-                            "component": "h6",
-                            "text": "GITHUB PROJECTS",
-                            "sx": {
-                              "color": "#000000"
-                            },
-                            "items": []
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": false,
-                "spacing": 5,
-                "container": true,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "flexDirection": "row"
-                },
-                "items":[
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#2d99e7",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#e64e48",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#e64e48",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#e64e48",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },                  
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#e64e48",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "ui_type": "Grid",
-                    "data":{
-                      "item": true,
-                      "xs": 4,
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"flex-start",
-                        "flexDirection": "row",
-                        "border": "1px solid green"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "sx": { 
-                              "width": 300,
-                              "height": 200,
-                              "bgcolor": "#e64e48",
-                              "marginBottom": "20px",
-                              "display": "flex",
-                              "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundSize": "contain",
-                              "borderRadius":"5px",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer",
-                              "zIndex": "21"
-                            },
-                            "items": [
-                              {
-                                "ui_type": "Typography",
-                                "data":{
-                                  "variant": "h5",
-                                  "component": "h5",
-                                  "text": "MediaMonks",
-                                  "sx": {
-                                    "color": "#fffffff"
-                                  },
-                                  "items": []
-                                }
-                              }
-                            ]
-                          }
-                        }
-                      ]
-                    }
-                  }
-                ]
-              }
+               }
             }
-          ]
-        }
+         ]
       }
-    ]
-  }
-},
-"interest": {
-  "ui_type": "Container",
-  "data": {
-    "disableGutter": true,
-    "maxWidth": false,
-    "style": {
-      "height": "auto",
-      "minHeight": "100vh",
-      "alignItems":"center",
-      "justifyContent":"center",
-      "display":"flex",
-      "backgroundImage": "url(/statics/img/bg_pattern_2.png)",
-      "backgroundSize": "contain"
-    },
-    "items": [
-      {
-        "ui_type": "Grid",
-        "data":{
-          "container": true,
-          "items": [
+   },
+   "programming":{
+      "ui_type":"Container",
+      "data":{
+         "disableGutter":true,
+         "maxWidth":false,
+         "container":true,
+         "spacing":5,
+         "style":{
+            "height":"auto",
+            "minHeight":"100vh",
+            "alignItems":"flex-start",
+            "justifyContent":"center",
+            "display":"flex",
+            "flexDirection":"row",
+            "backgroundImage":"url(/statics/img/bg_pattern_2.png)",
+            "backgroundSize":"contain"
+         },
+         "items":[
             {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items": [
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "programming"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+               "ui_type":"Grid",
+               "data":{
+                  "container":false,
+                  "display":"flex",
+                  "flexDirection":"row",
+                  "style":{
+                     "padding":"30px"
+                  },
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"flex-start",
+                              "flexDirection":"row",
+                              "marginBottom":"25px",
+                              "marginTop":"40px"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Box",
+                                 "data":{
+                                    "sx":{
+                                       "width":80,
+                                       "height":80,
+                                       "bgcolor":"#a4b0e5",
+                                       "border":"6px solid white",
+                                       "marginBottom":"20px",
+                                       "borderRadius":"50%",
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "backgroundImage":"url(/statics/img/main_circle.png)",
+                                       "backgroundSize":"contain",
+                                       "boxShadow":"0px 0px 20px 6px black",
+                                       "cursor":"pointer",
+                                       "zIndex":"21"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Image",
+                                          "data":{
+                                             "style":{
+                                                "width":40
+                                             },
+                                             "src":"/statics/img/programming.png",
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Box",
+                                 "data":{
+                                    "sx":{
+                                       "width":200,
+                                       "height":60,
+                                       "bgcolor":"#ffffff",
+                                       "border":"1px solid white",
+                                       "marginBottom":"20px",
+                                       "marginLeft":"-20px",
+                                       "borderRadius":"5px",
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "paddingLeft":"15px",
+                                       "boxShadow":"0px 0px 20px 6px black",
+                                       "cursor":"pointer"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h6",
+                                             "component":"h6",
+                                             "text":"PROGRAMMING",
+                                             "sx":{
+                                                "color":"#000000"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
                               "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "flexDirection":"column"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 140
-                                  },
-                                  "src":"/statics/img/programming.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Box",
+                                 "data":{
+                                    "className":"",
+                                    "sx":{
+                                       "width":"auto",
+                                       "height":"auto",
+                                       "bgcolor":"rgba(0,0,0,0.2)",
+                                       "border":"2px solid white",
+                                       "marginBottom":"20px",
+                                       "borderRadius":"5px",
+                                       "display":"flex",
+                                       "alignItems":"flex-start",
+                                       "justifyContent":"flex-start",
+                                       "padding":"15px",
+                                       "cursor":"pointer"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h6",
+                                             "component":"h6",
+                                             "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Eu facilisis sed odio morbi quis commodo odio. Ullamcorper sit amet risus nullam eget felis. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Pretium quam vulputate dignissim suspendisse. Venenatis lectus magna fringilla urna.",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "PROGRAMMING INTEREST",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }, 
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items":[
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "interest"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "justifyContent":"flex-start",
+                              "flexDirection":"row",
+                              "marginBottom":"45px",
+                              "marginTop":"80px"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 190
-                                  },
-                                  "src":"/statics/img/interest.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Box",
+                                 "data":{
+                                    "sx":{
+                                       "width":80,
+                                       "height":80,
+                                       "bgcolor":"#a4b0e5",
+                                       "border":"6px solid white",
+                                       "marginBottom":"20px",
+                                       "borderRadius":"50%",
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "backgroundImage":"url(/statics/img/main_circle.png)",
+                                       "backgroundSize":"contain",
+                                       "boxShadow":"0px 0px 20px 6px black",
+                                       "cursor":"pointer",
+                                       "zIndex":"21"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Image",
+                                          "data":{
+                                             "style":{
+                                                "width":49
+                                             },
+                                             "src":"/statics/img/github.png",
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Box",
+                                 "data":{
+                                    "sx":{
+                                       "width":250,
+                                       "height":60,
+                                       "bgcolor":"#ffffff",
+                                       "border":"1px solid white",
+                                       "marginBottom":"20px",
+                                       "marginLeft":"-20px",
+                                       "borderRadius":"5px",
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "paddingLeft":"15px",
+                                       "boxShadow":"0px 0px 20px 6px black",
+                                       "cursor":"pointer"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h6",
+                                             "component":"h6",
+                                             "text":"GITHUB PROJECTS",
+                                             "sx":{
+                                                "color":"#000000"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "INTEREST",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items":[
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "contact"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":false,
+                           "spacing":5,
+                           "container":true,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
-                              "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "flexDirection":"row"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 140
-                                  },
-                                  "src":"/statics/img/contact.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#2d99e7",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#e64e48",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#e64e48",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#e64e48",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#e64e48",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              },
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":true,
+                                    "xs":4,
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"row",
+                                       "border":"1px solid green"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "sx":{
+                                                "width":300,
+                                                "height":200,
+                                                "bgcolor":"#e64e48",
+                                                "marginBottom":"20px",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundSize":"contain",
+                                                "borderRadius":"5px",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer",
+                                                "zIndex":"21"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Typography",
+                                                   "data":{
+                                                      "variant":"h5",
+                                                      "component":"h5",
+                                                      "text":"MediaMonks",
+                                                      "sx":{
+                                                         "color":"#fffffff"
+                                                      },
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "CONTACT",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }   
-          ]
-        }
+                     }
+                  ]
+               }
+            }
+         ]
       }
-    ]
-  }
-},
-"contact": {
-  "ui_type": "Container",
-  "data": {
-    "disableGutter": true,
-    "maxWidth": false,
-    "style": {
-      "height": "auto",
-      "minHeight": "100vh",
-      "alignItems":"center",
-      "justifyContent":"center",
-      "display":"flex",
-      "backgroundImage": "url(/statics/img/bg_pattern_2.png)",
-      "backgroundSize": "contain"
-    },
-    "items": [
-      {
-        "ui_type": "Grid",
-        "data":{
-          "container": true,
-          "items": [
+   },
+   "interest":{
+      "ui_type":"Container",
+      "data":{
+         "disableGutter":true,
+         "maxWidth":false,
+         "style":{
+            "height":"auto",
+            "minHeight":"100vh",
+            "alignItems":"center",
+            "justifyContent":"center",
+            "display":"flex",
+            "backgroundImage":"url(/statics/img/bg_pattern_2.png)",
+            "backgroundSize":"contain"
+         },
+         "items":[
             {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items": [
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "programming"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items":[
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+               "ui_type":"Grid",
+               "data":{
+                  "container":true,
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
                               "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "flexDirection":"column"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 140
-                                  },
-                                  "src":"/statics/img/programming.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"programming"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/programming.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"PROGRAMMING INTEREST",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "PROGRAMMING CONTACT",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }, 
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items":[
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "interest"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
                               "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "flexDirection":"column"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 190
-                                  },
-                                  "src":"/statics/img/interest.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"interest"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":190
+                                                      },
+                                                      "src":"/statics/img/interest.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"INTEREST",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "INTEREST",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            },
-            {
-              "ui_type": "Grid",
-              "data":{
-                "item": true,
-                "xs": 4,
-                "style": {
-                  "display": "flex",
-                  "alignItems":"center",
-                  "justifyContent":"center",
-                  "flexDirection": "column"
-                },
-                "items":[
-                  {
-                    "ui_type": "Link",
-                    "data":{
-                      "underline": "none",
-                      "action": {
-                        "eventAction": "trigerNavEvent",
-                        "route": "contact"
-                      },
-                      "style": {
-                        "display": "flex",
-                        "alignItems":"center",
-                        "justifyContent":"center",
-                        "flexDirection": "column"
-                      },
-                      "items": [
-                        {
-                          "ui_type": "Box",
-                          "data":{
-                            "className": "hover-light",
-                            "sx": { 
-                              "width": 280, 
-                              "height": 280,
-                              "bgcolor": "#a4b0e5",
-                              "border": "10px solid white",
-                              "marginBottom": "20px",
-                              "borderRadius": "50%",
-                              "display": "flex",
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
                               "alignItems":"center",
                               "justifyContent":"center",
-                              "backgroundImage": "url(/statics/img/main_circle.png)",
-                              "backgroundSize": "contain",
-                              "boxShadow": "0px 0px 20px 6px black",
-                              "cursor": "pointer"
-                            },
-                            "items": [
+                              "flexDirection":"column"
+                           },
+                           "items":[
                               {
-                                "ui_type": "Image",
-                                "data":{
-                                  "style": { 
-                                    "width": 140
-                                  },
-                                  "src":"/statics/img/contact.png",
-                                  "items": []
-                                }
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"contact"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/contact.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"CONTACT",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
                               }
-                            ]
-                          }
-                        },
-                        {
-                          "ui_type": "Typography",
-                          "data":{
-                            "variant": "h5",
-                            "component": "h5",
-                            "text": "CONTACT",
-                            "sx": {
-                              "color": "#23e270"
-                            },
-                            "items": []
-                          }
+                           ]
                         }
-                      ]
-                    }
-                  }
-                ]
-              }
-            }   
-          ]
-        }
+                     }
+                  ]
+               }
+            }
+         ]
       }
-    ]
-  }
-}
+   },
+   "contact":{
+      "ui_type":"Container",
+      "data":{
+         "disableGutter":true,
+         "maxWidth":false,
+         "style":{
+            "height":"auto",
+            "minHeight":"100vh",
+            "alignItems":"center",
+            "justifyContent":"center",
+            "display":"flex",
+            "backgroundImage":"url(/statics/img/bg_pattern_2.png)",
+            "backgroundSize":"contain"
+         },
+         "items":[
+            {
+               "ui_type":"Grid",
+               "data":{
+                  "container":true,
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"programming"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/programming.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"PROGRAMMING CONTACT",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"interest"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":190
+                                                      },
+                                                      "src":"/statics/img/interest.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"INTEREST",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     },
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":true,
+                           "xs":4,
+                           "style":{
+                              "display":"flex",
+                              "alignItems":"center",
+                              "justifyContent":"center",
+                              "flexDirection":"column"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Link",
+                                 "data":{
+                                    "underline":"none",
+                                    "action":{
+                                       "eventAction":"trigerNavEvent",
+                                       "params":{
+                                          "route":"contact"
+                                       }
+                                    },
+                                    "style":{
+                                       "display":"flex",
+                                       "alignItems":"center",
+                                       "justifyContent":"center",
+                                       "flexDirection":"column"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Box",
+                                          "data":{
+                                             "className":"hover-light",
+                                             "sx":{
+                                                "width":280,
+                                                "height":280,
+                                                "bgcolor":"#a4b0e5",
+                                                "border":"10px solid white",
+                                                "marginBottom":"20px",
+                                                "borderRadius":"50%",
+                                                "display":"flex",
+                                                "alignItems":"center",
+                                                "justifyContent":"center",
+                                                "backgroundImage":"url(/statics/img/main_circle.png)",
+                                                "backgroundSize":"contain",
+                                                "boxShadow":"0px 0px 20px 6px black",
+                                                "cursor":"pointer"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Image",
+                                                   "data":{
+                                                      "style":{
+                                                         "width":140
+                                                      },
+                                                      "src":"/statics/img/contact.png",
+                                                      "items":[
+                                                         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       },
+                                       {
+                                          "ui_type":"Typography",
+                                          "data":{
+                                             "variant":"h5",
+                                             "component":"h5",
+                                             "text":"CONTACT",
+                                             "sx":{
+                                                "color":"#23e270"
+                                             },
+                                             "items":[
+                                                
+                                             ]
+                                          }
+                                       }
+                                    ]
+                                 }
+                              }
+                           ]
+                        }
+                     }
+                  ]
+               }
+            }
+         ]
+      }
+   }
 }
