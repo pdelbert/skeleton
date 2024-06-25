@@ -1,22 +1,23 @@
 import React, { useState, useEffect, useMemo, useContext } from "react";
 import { pageServices } from "../services/pageServices";
 import { actions } from "../actions";
-import { Methods, Routes } from "../types";
+import { Methods } from "../types";
+import { Routes } from "../Routes";
 
 interface IAction {
   eventAction: keyof typeof actions
   route: string
 }
 
+const EMPTY = '';
 const PageContext = React.createContext<undefined>(undefined)
-
 
 const PageProvider = (props:any) => {
   const initRequestType:Methods = 'get';
-  const currentUrl:string = window.location.href.split('/').pop() || "main";
-  
+  const currentRoute:string = window.location.href.split('/').pop() || EMPTY;
+
   const [pageData, setPageData] = useState<object | unknown>(undefined);
-  const [pageRoute, setPageRoute] = useState(currentUrl);
+  const [pageRoute, setPageRoute] = useState(currentRoute in Routes ? currentRoute : Routes.main);
 
   useEffect(() => {
       (async () => {
