@@ -17,6 +17,7 @@ const link = ({href, underline, style, children, action, context}: LinkProps) =>
   return (
     <div>
         <Link 
+            href={href}
             style={style}
             onClick={handlerClick}
             underline={underline}>
