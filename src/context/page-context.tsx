@@ -10,12 +10,11 @@ interface IAction {
 }
 
 const EMPTY = '';
+const initRequestType:Methods = 'get';
+const currentRoute:string = window.location.href.split('/').pop() || EMPTY;
 const PageContext = React.createContext<undefined>(undefined)
 
 const PageProvider = (props:any) => {
-  const initRequestType:Methods = 'get';
-  const currentRoute:string = window.location.href.split('/').pop() || EMPTY;
-
   const [pageData, setPageData] = useState<object | unknown>(undefined);
   const [pageRoute, setPageRoute] = useState(currentRoute in Routes ? currentRoute : Routes.main);
 
