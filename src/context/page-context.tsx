@@ -12,7 +12,8 @@ interface IAction {
 const EMPTY = '';
 const initRequestType:Methods = 'get';
 const currentRoute:string = window.location.href.split('/').pop() || EMPTY;
-const PageContext = React.createContext<undefined>(undefined)
+const PageContext = React.createContext<undefined>(undefined);
+
 
 const PageProvider = (props:any) => {
   const [pageData, setPageData] = useState<object | unknown>(undefined);
@@ -28,7 +29,7 @@ const PageProvider = (props:any) => {
 
 
   const triggerActionEvent = (e:React.MouseEvent<HTMLAnchorElement, MouseEvent>, action:IAction) => {
-    e && e.stopPropagation();
+    e.stopPropagation();
     const {eventAction, params } = action;
     actions[eventAction](params, setPageRoute);
   }
