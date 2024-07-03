@@ -21,6 +21,7 @@ type GridProps = {
     wrap: GridWrap;
     direction: GridDirection;
     style: object;
+    className: string
 }
 
 const grid = ({
@@ -33,10 +34,12 @@ const grid = ({
     direction,
     xs, sm, md, lg, xl,
     wrap,
-    style
+    style,
+    className
 }: GridProps) => {
   return (
     <Grid 
+      className={className}
       container={container}
       item={item}
       columns={columns}
