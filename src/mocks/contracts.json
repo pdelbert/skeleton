@@ -290,244 +290,195 @@
             "alignItems":"flex-start",
             "justifyContent":"center",
             "display":"flex",
-            "flexDirection":"row",
-            "backgroundImage":"url(/statics/img/bg_pattern_2.png)",
-            "backgroundSize":"contain"
+            "flexDirection":"column",
+            "backgroundColor":"#181818",
+            "backgroundSize":"contain",
+            "padding": "0"
          },
          "items":[
             {
                "ui_type":"Grid",
                "data":{
+                  "className":"test",
                   "container":false,
-                  "display":"flex",
+                  "display":"grid",
                   "flexDirection":"row",
                   "style":{
-                     "padding":"30px"
+                     "padding":"0px",
+                     "margin":"0px",
+                     "width": "100%"
                   },
                   "items":[
                      {
                         "ui_type":"Grid",
                         "data":{
-                           "item":true,
-                           "xs":4,
+                           "item":false,
+                           "spacing":1,
+                           "container":true,
                            "style":{
+                              "height": "90px",
                               "display":"flex",
-                              "alignItems":"center",
-                              "justifyContent":"flex-start",
-                              "flexDirection":"row",
-                              "marginBottom":"25px",
-                              "marginTop":"40px"
-                           },
-                           "items":[
-                              {
-                                 "ui_type":"Box",
-                                 "data":{
-                                    "sx":{
-                                       "width":80,
-                                       "height":80,
-                                       "bgcolor":"#a4b0e5",
-                                       "border":"6px solid white",
-                                       "marginBottom":"20px",
-                                       "borderRadius":"50%",
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "backgroundImage":"url(/statics/img/main_circle.png)",
-                                       "backgroundSize":"contain",
-                                       "boxShadow":"0px 0px 20px 6px black",
-                                       "cursor":"pointer",
-                                       "zIndex":"21"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Image",
-                                          "data":{
-                                             "style":{
-                                                "width":40
-                                             },
-                                             "src":"/statics/img/programming.png",
-                                             "items":[
-                                                
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Box",
-                                 "data":{
-                                    "sx":{
-                                       "width":200,
-                                       "height":60,
-                                       "bgcolor":"#ffffff",
-                                       "border":"1px solid white",
-                                       "marginBottom":"20px",
-                                       "marginLeft":"-20px",
-                                       "borderRadius":"5px",
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "paddingLeft":"15px",
-                                       "boxShadow":"0px 0px 20px 6px black",
-                                       "cursor":"pointer"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Typography",
-                                          "data":{
-                                             "variant":"h6",
-                                             "component":"h6",
-                                             "text":"PROGRAMMING",
-                                             "sx":{
-                                                "color":"#000000"
-                                             },
-                                             "items":[
-                                                
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              }
-                           ]
-                        }
-                     },
-                     {
-                        "ui_type":"Grid",
-                        "data":{
-                           "item":true,
-                           "xs":4,
-                           "style":{
-                              "display":"flex",
-                              "alignItems":"center",
                               "justifyContent":"center",
-                              "flexDirection":"column"
+                              "borderBottom": "1px solid #2d2d2d",
+                              "padding": "0",
+                              "marginBottom": "40px"
                            },
                            "items":[
                               {
-                                 "ui_type":"Box",
+                                 "ui_type":"Grid",
                                  "data":{
-                                    "className":"",
-                                    "sx":{
-                                       "width":"auto",
-                                       "height":"auto",
-                                       "bgcolor":"rgba(0,0,0,0.2)",
-                                       "border":"2px solid white",
-                                       "marginBottom":"20px",
-                                       "borderRadius":"5px",
+                                    "container":true,
+                                    "xs":"12",
+                                    "style":{
+                                       "height": "auto",
                                        "display":"flex",
-                                       "alignItems":"flex-start",
-                                       "justifyContent":"flex-start",
-                                       "padding":"15px",
-                                       "cursor":"pointer"
+                                       "flexDirection":"row",
+                                       "padding": "10px 38px"
                                     },
                                     "items":[
                                        {
-                                          "ui_type":"Typography",
+                                          "ui_type":"Grid",
                                           "data":{
-                                             "variant":"h6",
-                                             "component":"h6",
-                                             "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis molestie a iaculis at erat pellentesque adipiscing commodo elit. Eu facilisis sed odio morbi quis commodo odio. Ullamcorper sit amet risus nullam eget felis. Metus dictum at tempor commodo ullamcorper a lacus vestibulum. Pretium quam vulputate dignissim suspendisse. Venenatis lectus magna fringilla urna.",
-                                             "sx":{
-                                                "color":"#23e270"
-                                             },
-                                             "items":[
-                                                
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              }
-                           ]
-                        }
-                     },
-                     {
-                        "ui_type":"Grid",
-                        "data":{
-                           "item":true,
-                           "xs":4,
-                           "style":{
-                              "display":"flex",
-                              "alignItems":"center",
-                              "justifyContent":"flex-start",
-                              "flexDirection":"row",
-                              "marginBottom":"45px",
-                              "marginTop":"80px"
-                           },
-                           "items":[
-                              {
-                                 "ui_type":"Box",
-                                 "data":{
-                                    "sx":{
-                                       "width":80,
-                                       "height":80,
-                                       "bgcolor":"#a4b0e5",
-                                       "border":"6px solid white",
-                                       "marginBottom":"20px",
-                                       "borderRadius":"50%",
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "backgroundImage":"url(/statics/img/main_circle.png)",
-                                       "backgroundSize":"contain",
-                                       "boxShadow":"0px 0px 20px 6px black",
-                                       "cursor":"pointer",
-                                       "zIndex":"21"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Image",
-                                          "data":{
+                                             "item":true,
+                                             "xs":"6",
                                              "style":{
-                                                "width":49
+                                                "height": "auto",
+                                                "display":"flex",
+                                                "flexDirection":"row"
                                              },
-                                             "src":"/statics/img/github.png",
                                              "items":[
-                                                
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":"3",
+                                                      "style":{
+                                                         "height": "auto",
+                                                         "display":"flex",
+                                                         "flexDirection":"column",
+                                                         "marginTop": "10px",
+                                                         "backgroundImage":"url(/statics/img/logo.png)",
+                                                         "backgroundRepeat":" no-repeat",
+                                                         "backgroundSize":"contain"
+                                                      },
+                                                      "items":[]
+                                                   }
+                                                }
                                              ]
                                           }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Box",
-                                 "data":{
-                                    "sx":{
-                                       "width":250,
-                                       "height":60,
-                                       "bgcolor":"#ffffff",
-                                       "border":"1px solid white",
-                                       "marginBottom":"20px",
-                                       "marginLeft":"-20px",
-                                       "borderRadius":"5px",
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "paddingLeft":"15px",
-                                       "boxShadow":"0px 0px 20px 6px black",
-                                       "cursor":"pointer"
-                                    },
-                                    "items":[
+                                       },
                                        {
-                                          "ui_type":"Typography",
+                                          "ui_type":"Grid",
                                           "data":{
-                                             "variant":"h6",
-                                             "component":"h6",
-                                             "text":"GITHUB PROJECTS",
-                                             "sx":{
-                                                "color":"#000000"
+                                             "item":true,
+                                             "xs":"6",
+                                             "style":{
+                                                "height": "auto",
+                                                "display":"flex",
+                                                "flexDirection":"row",
+                                                "justifyContent": "flex-end"
                                              },
                                              "items":[
-                                                
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":"2",
+                                                      "style":{
+                                                         "height": "auto",
+                                                         "display":"grid",
+                                                         "cursor": "pointer",
+                                                         "alignItems": "flex-end",
+                                                         "justifyContent": "center",
+                                                         "marginBottom": "10px"
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"h3",
+                                                               "component":"h3", 
+                                                               "text":"ABOUT",
+                                                               "sx":{
+                                                                  "color":"#ffff",
+                                                                  "fontSize": "16px",
+                                                                  "fontWeight": "700"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                },
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":"2",
+                                                      "style":{
+                                                         "height": "auto",
+                                                         "display":"grid",
+                                                         "cursor": "pointer",
+                                                         "alignItems": "flex-end",
+                                                         "justifyContent": "center",
+                                                         "marginBottom": "10px"
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"h3",
+                                                               "component":"h3", 
+                                                               "text":"CAREER",
+                                                               "sx":{
+                                                                  "color":"#ffff",
+                                                                  "fontSize": "16px",
+                                                                  "fontWeight": "700"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                },
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":"2",
+                                                      "style":{
+                                                         "height": "auto",
+                                                         "display":"grid",
+                                                         "cursor": "pointer",
+                                                         "alignItems": "flex-end",
+                                                         "justifyContent": "center",
+                                                         "marginBottom": "10px"
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"h3",
+                                                               "component":"h3", 
+                                                               "text":"INTEREST",
+                                                               "sx":{
+                                                                  "color":"#ffff",
+                                                                  "fontSize": "16px",
+                                                                  "fontWeight": "700"                                                                  
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                }
+                                                    
                                              ]
                                           }
-                                       }
+                                       }         
                                     ]
                                  }
-                              }
+                              }            
                            ]
                         }
                      },
@@ -535,312 +486,211 @@
                         "ui_type":"Grid",
                         "data":{
                            "item":false,
-                           "spacing":5,
+                           "spacing":1,
                            "container":true,
                            "style":{
                               "display":"flex",
-                              "alignItems":"center",
-                              "flexDirection":"row"
+                              "justifyContent":"center"
                            },
                            "items":[
                               {
                                  "ui_type":"Grid",
                                  "data":{
-                                    "item":true,
-                                    "xs":4,
+                                    "item":false,
+                                    "spacing":1,
+                                    "container":true,
                                     "style":{
+                                       "height": "82vh",
+                                       "minHeight": "760px",
                                        "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
+                                       "justifyContent":"center"
                                     },
                                     "items":[
                                        {
-                                          "ui_type":"Box",
+                                          "ui_type":"Grid",
                                           "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#2d99e7",
-                                                "marginBottom":"20px",
+                                             "container":true,
+                                             "xs":"6",
+                                             "style":{
+                                                "height": "auto",
                                                 "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
+                                                "flexDirection":"column"
                                              },
                                              "items":[
                                                 {
-                                                   "ui_type":"Typography",
+                                                   "ui_type":"Grid",
                                                    "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
-                                                      "sx":{
-                                                         "color":"#fffffff"
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "height": "auto",
+                                                         "minHeight": "100px",
+                                                         "display":"grid",
+                                                         "placeContent":"center"
                                                       },
                                                       "items":[
-                                                         
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":12,
+                                                               "style":{
+                                                                  "height": "auto",
+                                                                  "minHeight": "100px",
+                                                                  "display":"flex",
+                                                                  "alignItems":"center",
+                                                                  "justifyContent":"flex-start",
+                                                                  "flexDirection":"row"
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Typography",
+                                                                     "data":{
+                                                                        "variant":"h6",
+                                                                        "component":"h6",
+                                                                        "text":"Pedro is a Software Engeneer from the Caribbean Who's creativity use to get out of control",
+                                                                        "sx":{
+                                                                           "color":"#ffff",
+                                                                           "fontSize": "47px",
+                                                                           "lineHeight": "initial",
+                                                                           "marginBottom": "20px",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[
+                                                                           
+                                                                        ]
+                                                                     }
+                                                                  }
+                  
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":12,
+                                                               "style":{
+                                                                  "height": "auto",
+                                                                  "minHeight": "50px",
+                                                                  "display":"flex",
+                                                                  "flexDirection":"row"
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Typography",
+                                                                     "data":{
+                                                                        "variant":"h6",
+                                                                        "component":"h6",
+                                                                        "text":"Im always looking for new creative and fun ways to make things happen",
+                                                                        "sx":{
+                                                                           "color":"#555454"
+                                                                        },
+                                                                        "items":[
+                                                                           
+                                                                        ]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":12,
+                                                               "style":{
+                                                                  "height": "auto",
+                                                                  "minHeight": "50px",
+                                                                  "display":"flex",
+                                                                  "gap": "35px"
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":40,
+                                                                           "height":40,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundSize":"contain",
+                                                                           "cursor":"pointer",
+                                                                           "border": "1px solid #2d2d2d",
+                                                                           "borderRadius": "5px"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  },
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":40,
+                                                                           "height":40,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundSize":"contain",
+                                                                           "cursor":"pointer",
+                                                                           "border": "1px solid #2d2d2d",
+                                                                           "borderRadius": "5px"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  },
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":40,
+                                                                           "height":40,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundSize":"contain",
+                                                                           "cursor":"pointer",
+                                                                           "border": "1px solid #2d2d2d",
+                                                                           "borderRadius": "5px"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         }
                                                       ]
                                                    }
                                                 }
                                              ]
                                           }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Grid",
-                                 "data":{
-                                    "item":true,
-                                    "xs":4,
-                                    "style":{
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
-                                    },
-                                    "items":[
+                                       },
                                        {
-                                          "ui_type":"Box",
+                                          "ui_type":"Grid",
                                           "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#e64e48",
-                                                "marginBottom":"20px",
-                                                "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
+                                             "item":true,
+                                             "xs":3,
+                                             "style":{
+                                                "display":"grid",
+                                                "placeContent": "center"                                                
                                              },
                                              "items":[
                                                 {
-                                                   "ui_type":"Typography",
+                                                   "ui_type":"Box",
                                                    "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
                                                       "sx":{
-                                                         "color":"#fffffff"
+                                                         "width":480,
+                                                         "height":480,
+                                                         "display":"flex",
+                                                         "alignItems":"center",
+                                                         "justifyContent":"center",
+                                                         "backgroundImage":"url(/statics/img/sho.jpeg)",
+                                                         "backgroundRepeat":" no-repeat",
+                                                         "backgroundSize":"contain",
+                                                         "transform":"translateX(-50%)"
                                                       },
-                                                      "items":[
-                                                         
-                                                      ]
-                                                   }
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Grid",
-                                 "data":{
-                                    "item":true,
-                                    "xs":4,
-                                    "style":{
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Box",
-                                          "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#e64e48",
-                                                "marginBottom":"20px",
-                                                "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
-                                             },
-                                             "items":[
-                                                {
-                                                   "ui_type":"Typography",
-                                                   "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
-                                                      "sx":{
-                                                         "color":"#fffffff"
-                                                      },
-                                                      "items":[
-                                                         
-                                                      ]
-                                                   }
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Grid",
-                                 "data":{
-                                    "item":true,
-                                    "xs":4,
-                                    "style":{
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Box",
-                                          "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#e64e48",
-                                                "marginBottom":"20px",
-                                                "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
-                                             },
-                                             "items":[
-                                                {
-                                                   "ui_type":"Typography",
-                                                   "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
-                                                      "sx":{
-                                                         "color":"#fffffff"
-                                                      },
-                                                      "items":[
-                                                         
-                                                      ]
-                                                   }
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Grid",
-                                 "data":{
-                                    "item":true,
-                                    "xs":4,
-                                    "style":{
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Box",
-                                          "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#e64e48",
-                                                "marginBottom":"20px",
-                                                "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
-                                             },
-                                             "items":[
-                                                {
-                                                   "ui_type":"Typography",
-                                                   "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
-                                                      "sx":{
-                                                         "color":"#fffffff"
-                                                      },
-                                                      "items":[
-                                                         
-                                                      ]
-                                                   }
-                                                }
-                                             ]
-                                          }
-                                       }
-                                    ]
-                                 }
-                              },
-                              {
-                                 "ui_type":"Grid",
-                                 "data":{
-                                    "item":true,
-                                    "xs":4,
-                                    "style":{
-                                       "display":"flex",
-                                       "alignItems":"center",
-                                       "justifyContent":"center",
-                                       "flexDirection":"row",
-                                       "border":"1px solid green"
-                                    },
-                                    "items":[
-                                       {
-                                          "ui_type":"Box",
-                                          "data":{
-                                             "sx":{
-                                                "width":300,
-                                                "height":200,
-                                                "bgcolor":"#e64e48",
-                                                "marginBottom":"20px",
-                                                "display":"flex",
-                                                "alignItems":"center",
-                                                "justifyContent":"center",
-                                                "backgroundSize":"contain",
-                                                "borderRadius":"5px",
-                                                "boxShadow":"0px 0px 20px 6px black",
-                                                "cursor":"pointer",
-                                                "zIndex":"21"
-                                             },
-                                             "items":[
-                                                {
-                                                   "ui_type":"Typography",
-                                                   "data":{
-                                                      "variant":"h5",
-                                                      "component":"h5",
-                                                      "text":"MediaMonks",
-                                                      "sx":{
-                                                         "color":"#fffffff"
-                                                      },
-                                                      "items":[
-                                                         
-                                                      ]
+                                                      "items":[]
                                                    }
                                                 }
                                              ]
@@ -849,12 +699,700 @@
                                     ]
                                  }
                               }
+                              
                            ]
                         }
                      }
                   ]
                }
-            }
+            },
+            {
+               "ui_type":"Grid",
+               "data":{
+                  "container":false,
+                  "display":"grid",
+                  "flexDirection":"row",
+                  "className":"test",
+                  "style":{
+                     "padding":"0px",
+                     "margin":"0px",
+                     "width": "100%"
+                  },
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":false,
+                           "spacing":1,
+                           "container":true,
+                           "style":{
+                              "display":"flex",
+                              "justifyContent":"center"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":false,
+                                    "spacing":1,
+                                    "container":true,
+                                    "style":{
+                                       "height": "auto",
+                                       "minHeight": "860px",
+                                       "display":"flex",
+                                       "justifyContent":"center"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Grid",
+                                          "data":{
+                                             "container":true,
+                                             "xs":10,
+                                             "style":{
+                                                "height": "auto",
+                                                "display":"initial",
+                                                "flexDirection":"row",
+                                                "marginBottom": "30px"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"grid",
+                                                         "placeContent": "flex-start"  
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"I've Worked with",
+                                                               "sx":{
+                                                                  "color":"#555454",
+                                                                  "fontSize": "21px",
+                                                                  "lineHeight": "initial",
+                                                                  "marginBottom": "20px",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                },
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"flex",
+                                                         "height": "100%",
+                                                         "placeContent": "center",
+                                                         "position": "relative"                        
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"2016",
+                                                               "sx":{
+                                                                  "color":"#292929",
+                                                                  "top": "50%",
+                                                                  "transform": "translateY(-50%)",
+                                                                  "fontSize": "43rem",
+                                                                  "fontWeight": "400",
+                                                                  "lineHeight": "0.9",
+                                                                  "position": "absolute",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":4,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                    
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":477,
+                                                                           "height":45,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundImage":"url(/statics/img/persiscal.svg)",
+                                                                           "backgroundRepeat":" no-repeat",
+                                                                           "backgroundSize":"contain",
+                                                                           "zIndex": "3"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":1,
+                                                               "style":{
+                                                                  "display":"flex",
+                                                                  "flexDirection": "column",
+                                                                  "alignItems": "center"                      
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line active",
+                                                                        "sx":{
+                                                                           "width":"30px",
+                                                                           "height":"30px",
+                                                                           "marginBottom":"25px",
+                                                                           "borderRadius":"50%",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  },
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line active",
+                                                                        "sx":{
+                                                                           "width":"4px",
+                                                                           "height":"100%",
+                                                                           "marginBottom":"10px",
+                                                                           "borderRadius": "2px",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":5,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                   
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Typography",
+                                                                     "data":{
+                                                                        "variant":"h6",
+                                                                        "component":"h6",
+                                                                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Placerat duis ultricies lacus sed. Morbi quis commodo odio aenean sed adipiscing diam. Etiam erat velit scelerisque in dictum non. Pellentesque pulvinar pellentesque habitant morbi tristique. Elementum eu facilisis sed odio morbi. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Ultrices sagittis orci a scelerisque purus semper eget duis at. A lacus vestibulum sed arcu. Nibh praesent tristique magna sit amet purus gravida quis. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Velit scelerisque in dictum non consectetur a erat. Sit amet est placerat in egestas erat. Fermentum dui faucibus in ornare quam. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices.",
+                                                                        "sx":{
+                                                                           "color":"#fffff",
+                                                                           "top": "0",
+                                                                           "fontSize": "1.5rem",
+                                                                           "fontWeight": "100",
+                                                                           "lineHeight": "1.2",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         }
+         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                       
+                                    ]
+                                 }
+                              }
+                              
+                           ]
+                        }
+                     }
+                  ]
+               }
+            },
+            {
+               "ui_type":"Grid",
+               "data":{
+                  "container":false,
+                  "display":"grid",
+                  "flexDirection":"row",
+                  "className":"test",
+                  "style":{
+                     "padding":"0px",
+                     "margin":"0px",
+                     "width": "100%"
+                  },
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":false,
+                           "spacing":1,
+                           "container":true,
+                           "style":{
+                              "display":"flex",
+                              "justifyContent":"center"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":false,
+                                    "spacing":1,
+                                    "container":true,
+                                    "style":{
+                                       "height": "auto",
+                                       "minHeight": "860px",
+                                       "display":"flex",
+                                       "justifyContent":"center"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Grid",
+                                          "data":{
+                                             "container":true,
+                                             "xs":10,
+                                             "style":{
+                                                "height": "auto",
+                                                "display":"initial",
+                                                "flexDirection":"row",
+                                                "marginBottom": "30px"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"grid",
+                                                         "placeContent": "flex-start"  
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"I've Worked with",
+                                                               "sx":{
+                                                                  "color":"#555454",
+                                                                  "fontSize": "21px",
+                                                                  "lineHeight": "initial",
+                                                                  "marginBottom": "20px",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                },
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"flex",
+                                                         "height": "100%",
+                                                         "placeContent": "center",
+                                                         "position": "relative"                        
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"2017",
+                                                               "sx":{
+                                                                  "color":"#292929",
+                                                                  "top": "50%",
+                                                                  "transform": "translateY(-50%)",
+                                                                  "fontSize": "43rem",
+                                                                  "fontWeight": "400",
+                                                                  "lineHeight": "0.9",
+                                                                  "position": "absolute",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":4,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                    
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":477,
+                                                                           "height":45,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundImage":"url(/statics/img/persiscal.svg)",
+                                                                           "backgroundRepeat":" no-repeat",
+                                                                           "backgroundSize":"contain",
+                                                                           "zIndex": "3"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":1,
+                                                               "style":{
+                                                                  "display":"flex",
+                                                                  "flexDirection": "column",
+                                                                  "alignItems": "center"                      
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line",
+                                                                        "sx":{
+                                                                           "width":"30px",
+                                                                           "height":"30px",
+                                                                           "marginBottom":"25px",
+                                                                           "borderRadius":"50%",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  },
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line",
+                                                                        "sx":{
+                                                                           "width":"4px",
+                                                                           "height":"100%",
+                                                                           "marginBottom":"10px",
+                                                                           "borderRadius": "2px",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":5,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                   
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Typography",
+                                                                     "data":{
+                                                                        "variant":"h6",
+                                                                        "component":"h6",
+                                                                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Placerat duis ultricies lacus sed. Morbi quis commodo odio aenean sed adipiscing diam. Etiam erat velit scelerisque in dictum non. Pellentesque pulvinar pellentesque habitant morbi tristique. Elementum eu facilisis sed odio morbi. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Ultrices sagittis orci a scelerisque purus semper eget duis at. A lacus vestibulum sed arcu. Nibh praesent tristique magna sit amet purus gravida quis. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Velit scelerisque in dictum non consectetur a erat. Sit amet est placerat in egestas erat. Fermentum dui faucibus in ornare quam. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices.",
+                                                                        "sx":{
+                                                                           "color":"#fffff",
+                                                                           "top": "0",
+                                                                           "fontSize": "1.5rem",
+                                                                           "fontWeight": "100",
+                                                                           "lineHeight": "1.2",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         }
+         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                       
+                                    ]
+                                 }
+                              }
+                              
+                           ]
+                        }
+                     }
+                  ]
+               }
+            },
+            {
+               "ui_type":"Grid",
+               "data":{
+                  "container":false,
+                  "display":"grid",
+                  "flexDirection":"row",
+                  "className":"test",
+                  "style":{
+                     "padding":"0px",
+                     "margin":"0px",
+                     "width": "100%"
+                  },
+                  "items":[
+                     {
+                        "ui_type":"Grid",
+                        "data":{
+                           "item":false,
+                           "spacing":1,
+                           "container":true,
+                           "style":{
+                              "display":"flex",
+                              "justifyContent":"center"
+                           },
+                           "items":[
+                              {
+                                 "ui_type":"Grid",
+                                 "data":{
+                                    "item":false,
+                                    "spacing":1,
+                                    "container":true,
+                                    "style":{
+                                       "height": "auto",
+                                       "minHeight": "860px",
+                                       "display":"flex",
+                                       "justifyContent":"center"
+                                    },
+                                    "items":[
+                                       {
+                                          "ui_type":"Grid",
+                                          "data":{
+                                             "container":true,
+                                             "xs":10,
+                                             "style":{
+                                                "height": "auto",
+                                                "display":"initial",
+                                                "flexDirection":"row",
+                                                "marginBottom": "30px"
+                                             },
+                                             "items":[
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"grid",
+                                                         "placeContent": "flex-start"  
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"I've Worked with",
+                                                               "sx":{
+                                                                  "color":"#555454",
+                                                                  "fontSize": "21px",
+                                                                  "lineHeight": "initial",
+                                                                  "marginBottom": "20px",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         }
+                                                      ]
+                                                   }
+                                                },
+                                                {
+                                                   "ui_type":"Grid",
+                                                   "data":{
+                                                      "item":true,
+                                                      "xs":12,
+                                                      "style":{
+                                                         "display":"flex",
+                                                         "height": "100%",
+                                                         "placeContent": "center",
+                                                         "position": "relative"                        
+                                                      },
+                                                      "items":[
+                                                         {
+                                                            "ui_type":"Typography",
+                                                            "data":{
+                                                               "variant":"span",
+                                                               "component":"span",
+                                                               "text":"2018",
+                                                               "sx":{
+                                                                  "color":"#292929",
+                                                                  "top": "50%",
+                                                                  "transform": "translateY(-50%)",
+                                                                  "fontSize": "43rem",
+                                                                  "fontWeight": "400",
+                                                                  "lineHeight": "0.9",
+                                                                  "position": "absolute",
+                                                                  "zIndex": "2"
+                                                               },
+                                                               "items":[]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":4,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                    
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "sx":{
+                                                                           "width":477,
+                                                                           "height":45,
+                                                                           "display":"flex",
+                                                                           "alignItems":"center",
+                                                                           "justifyContent":"center",
+                                                                           "backgroundImage":"url(/statics/img/persiscal.svg)",
+                                                                           "backgroundRepeat":" no-repeat",
+                                                                           "backgroundSize":"contain",
+                                                                           "zIndex": "3"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":1,
+                                                               "style":{
+                                                                  "display":"flex",
+                                                                  "flexDirection": "column",
+                                                                  "alignItems": "center"                      
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line",
+                                                                        "sx":{
+                                                                           "width":"30px",
+                                                                           "height":"30px",
+                                                                           "marginBottom":"25px",
+                                                                           "borderRadius":"50%",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  },
+                                                                  {
+                                                                     "ui_type":"Box",
+                                                                     "data":{
+                                                                        "className":"scroll-line",
+                                                                        "sx":{
+                                                                           "width":"4px",
+                                                                           "height":"100%",
+                                                                           "marginBottom":"10px",
+                                                                           "borderRadius": "2px",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         },
+                                                         {
+                                                            "ui_type":"Grid",
+                                                            "data":{
+                                                               "item":true,
+                                                               "xs":5,
+                                                               "style":{
+                                                                  "display":"grid",
+                                                                  "placeContent": "center"                                   
+                                                               },
+                                                               "items":[
+                                                                  {
+                                                                     "ui_type":"Typography",
+                                                                     "data":{
+                                                                        "variant":"h6",
+                                                                        "component":"h6",
+                                                                        "text":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Commodo odio aenean sed adipiscing diam donec adipiscing tristique. Placerat duis ultricies lacus sed. Morbi quis commodo odio aenean sed adipiscing diam. Etiam erat velit scelerisque in dictum non. Pellentesque pulvinar pellentesque habitant morbi tristique. Elementum eu facilisis sed odio morbi. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus. Ultrices sagittis orci a scelerisque purus semper eget duis at. A lacus vestibulum sed arcu. Nibh praesent tristique magna sit amet purus gravida quis. Etiam non quam lacus suspendisse faucibus interdum posuere lorem. Velit scelerisque in dictum non consectetur a erat. Sit amet est placerat in egestas erat. Fermentum dui faucibus in ornare quam. Egestas purus viverra accumsan in nisl nisi scelerisque eu ultrices.",
+                                                                        "sx":{
+                                                                           "color":"#fffff",
+                                                                           "top": "0",
+                                                                           "fontSize": "1.5rem",
+                                                                           "fontWeight": "100",
+                                                                           "lineHeight": "1.2",
+                                                                           "zIndex": "2"
+                                                                        },
+                                                                        "items":[]
+                                                                     }
+                                                                  }
+                                                               ]
+                                                            }
+                                                         }
+         
+                                                      ]
+                                                   }
+                                                }
+                                             ]
+                                          }
+                                       }
+                                       
+                                    ]
+                                 }
+                              }
+                              
+                           ]
+                        }
+                     }
+                  ]
+               }
+            }            
          ]
       }
    },
